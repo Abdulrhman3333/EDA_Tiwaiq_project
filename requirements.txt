@@ -1,0 +1,8 @@
+streamlit>=1.36
+pandas>=2.0
+numpy>=1.24
+plotly>=5.18
+pyarrow>=14.0
+
+# only needed to build the dataset from the raw .xls exports (src/prepare_data.py)
+hijridate>=2.3
