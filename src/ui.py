@@ -12,6 +12,25 @@ from .data import Filters
 
 _CSS = f"""
 <style>
+:root {{
+    color-scheme: light;
+}}
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {{
+    background: #ffffff;
+    color: {C_DARK};
+}}
+[data-testid="stHeader"] {{
+    background: #ffffff;
+}}
+[data-testid="stSidebar"] {{
+    background: #f3f6f5;
+    color: {C_DARK};
+}}
+[data-testid="stSidebar"] * {{
+    color: {C_DARK};
+}}
 .block-container {{ padding-top: 2rem; max-width: 1250px; }}
 h1, h2, h3 {{ color: {C_DARK}; letter-spacing: -0.01em; }}
 
@@ -30,7 +49,6 @@ h1, h2, h3 {{ color: {C_DARK}; letter-spacing: -0.01em; }}
 
 .demo-banner {{ background: #fdecea; border: 1px solid #f5b5ab; color: #8a2b1d;
                border-radius: 8px; padding: 8px 12px; font-size: .85rem; margin-bottom: .6rem; }}
-[data-testid="stSidebar"] {{ background: #f3f6f5; }}
 </style>
 """
 
